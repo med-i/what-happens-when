@@ -162,18 +162,17 @@ sends the character to the ``window manager`` (DWM, metacity, i3, etc), so the
 The graphical API of the window  that receives the character prints the
 appropriate font symbol in the appropriate focused field.
 
-Parse URL
----------
+Parsing the URL
+---------------
 
-* The browser now has the following information contained in the URL (Uniform
-  Resource Locator):
+When the browser interprets the URL (Uniform Resource Locator), it extracts critical information required to establish a connection and retrieve the desired resource. For the URL example provided, the following details are parsed:
 
-    - ``Protocol``  "http"
-        Use 'Hyper Text Transfer Protocol'
+Protocol: "http"
 
-    - ``Resource``  "/"
-        Retrieve main (index) page
+The browser identifies "http" as the protocol to be used. This stands for 'Hyper Text Transfer Protocol', a foundational protocol for data communication on the World Wide Web. It defines the rules for transmitting documents (like HTML), ensuring the browser and the server speak the same language for data transfer.
+Resource: "/"
 
+The "/" in the URL signifies the specific resource to be retrieved. In this case, it points to the main or index page of the website. The index page is typically the default or home page that a web server serves when it receives a request for a domain without any specific path or file name. It's the entry point to the website, providing a starting place for navigation.
 
 Is it a URL or a search term?
 -----------------------------
